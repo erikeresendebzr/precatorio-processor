@@ -11,6 +11,7 @@ import { Upload, FileText, ImageIcon, Loader2, Sparkles, X, CheckCircle, AlertCi
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Logo } from "@/components/logo"
 import { Progress } from "@/components/ui/progress"
+import Link from "next/link"
 
 interface PrecatorioData {
   data_base: string
@@ -74,10 +75,6 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
             <line x1="60" y1="35" x2="60" y2="20" stroke="#3b82f6" strokeWidth="4" />
             <circle cx="60" cy="20" r="4" fill="#3b82f6" className="animate-ping" />
           </svg>
-        </div>
-        <div className="mb-4">
-          <h2 className="text-2xl font-bold text-blue-600 mb-2">PRECABOT</h2>
-          <p className="text-slate-600">Inicializando sistema...</p>
         </div>
         {/* Loading dots */}
         <div className="flex justify-center space-x-2 mt-6">
@@ -271,6 +268,13 @@ export default function PrecatorioProcessor() {
             <div className="text-center mb-12">
               <div className="flex justify-center mb-8 overflow-visible">
                 <Logo />
+              </div>
+              <div className="flex justify-center mb-6">
+                <Link href="/documentacao">
+                  <Button variant="outline" size="sm" className="text-blue-600 border-blue-200 hover:bg-blue-50">
+                    📖 Ver Documentação Técnica
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
