@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "PRECABOT - Inteligência Jurídica",
+  title: "PRECABOT - Inteligência Jurídica Para Precatórios",
   description: "Análise automatizada de documentos de precatórios com inteligência artificial avançada",
   keywords: "precatório, bot, inteligência artificial, jurídico, análise de documentos",
   generator: 'v0.dev',
