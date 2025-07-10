@@ -272,12 +272,6 @@ export default function PrecatorioProcessor() {
               <div className="flex justify-center mb-8 overflow-visible">
                 <Logo />
               </div>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Processe até <span className="font-semibold text-blue-600">{MAX_FILES} documentos</span> de precatórios simultaneamente com nossa{" "}
-                <span className="font-semibold text-blue-600">
-                  inteligência artificial avançada
-                </span>
-              </p>
             </div>
           </div>
         </div>
